@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PickerMVVM.View;
 
 namespace PickerMVVM
 {
@@ -10,7 +11,7 @@ namespace PickerMVVM
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new PickerView() );
         }
 
         protected override void OnStart()
