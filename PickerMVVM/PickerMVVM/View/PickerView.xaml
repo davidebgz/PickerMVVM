@@ -10,7 +10,9 @@
             <Label Text="Elejir Ciudad" FontSize="Medium" />
             <Picker Title="Selecione"
                     ItemsSource="{Binding ListaCiudades}"
-                    ItemDisplayBinding="{Binding Valor}"/>
+                    ItemDisplayBinding="{Binding valor}"
+                    SelectedItem="{Binding SelecionarCiudad}"/>
+            <Label Text="{Binding miciudad } " TextColor="Teal"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
